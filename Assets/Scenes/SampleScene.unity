@@ -371,7 +371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Topic: example
-  NameSpace: sub0
+  SubscriberName: sub0
 --- !u!114 &1066923669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,7 +384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Topic: example
-  NameSpace: sub1
+  SubscriberName: sub1
 --- !u!114 &1066923670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -397,4 +397,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Topic: example2
-  NameSpace: sub2
+  SubscriberName: sub2

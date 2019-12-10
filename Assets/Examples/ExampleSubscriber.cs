@@ -5,7 +5,7 @@ using UnityEngine;
 public class ExampleSubscriber : MonoBehaviour {
 
     public string Topic;
-    public string NameSpace;
+    public string SubscriberName;
     private UniCom.Subscriber<bool> subscriber;
 
 	// Use this for initialization
@@ -22,6 +22,6 @@ public class ExampleSubscriber : MonoBehaviour {
 
     public void callback(bool data)
     {
-        Debug.Log(NameSpace + ":" + data);
+        Debug.Log(SubscriberName + ":" + data);
     }
 }

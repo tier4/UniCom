@@ -1,6 +1,8 @@
 # UniCom
 
-Pub/Sub library for Unity
+Pub/Sub library for Unity.
+
+Unicom is a middleware based on UniRX.
 
 # How to use
 
