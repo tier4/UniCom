@@ -12,7 +12,7 @@ public class ExampleSubscriber : MonoBehaviour {
 	void Start ()
     {
         subscriber = new UniCom.Subscriber<bool>(Topic,callback);
-	}
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -23,5 +23,10 @@ public class ExampleSubscriber : MonoBehaviour {
     public void callback(bool data)
     {
         Debug.Log(SubscriberName + ":" + data);
+    }
+
+    private void OnDestroy()
+    {
+        subscriber = null;
     }
 }

@@ -24,4 +24,9 @@ public class ExamplePublisher : MonoBehaviour
         Debug.Log(NameSpace + ":" + BoolValue);
         pub_.Publish(BoolValue);
 	}
+
+    private void OnDestroy()
+    {
+        pub_ = null;
+    }
 }
