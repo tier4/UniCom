@@ -6,31 +6,11 @@ using System;
 
 namespace UniCom
 {
-    public class Subscriber<T>
+    public static class ComSubscriber
     {
-        public Subscriber(string topic, Action<T> func)
+        public static IObservable<T> Receive<T>(string topic)
         {
-            _topic = topic;
-            _func = func;
-            MessageBroker.Default.Receive<ComData<T>>().Subscribe(
-                x =>
-                {
-                    if(x.hash != typeof(T).GetHashCode())
-                    {
-                        Debug.LogError("Hashcode does not match. Chekck data type");
-                        return;
-                    }
-                    if(x.topic == _topic)
-                    {
-                        _func(x.data);
-                    }
-                }
-                );
-            return;
+            return MessageBroker.Default.Receive<ComData<T>>().Where(x => x.topic == topic).Select(x => x.data);
         }
-
-        private string _topic;
-        private ComData<T> _data;
-        Action<T> _func;
     }
 }
