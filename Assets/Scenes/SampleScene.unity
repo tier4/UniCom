@@ -358,7 +358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BoolValue: 0
   Topic: example
-  NameSpace: 
+  NameSpace: pub1
 --- !u!114 &1066923668
 MonoBehaviour:
   m_ObjectHideFlags: 0
