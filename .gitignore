@@ -29,3 +29,6 @@ sysinfo.txt
 
 # Extrenal Libs
 Plugins
+
+# Visual Studio
+.vs
