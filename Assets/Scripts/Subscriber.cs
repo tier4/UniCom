@@ -15,6 +15,11 @@ namespace UniCom
             MessageBroker.Default.Receive<ComData<T>>().Subscribe(
                 x =>
                 {
+                    if(x.hash != typeof(T).GetHashCode())
+                    {
+                        Debug.LogError("Hashcode does not match. Chekck data type");
+                        return;
+                    }
                     if(x.topic == _topic)
                     {
                         _func(x.data);
