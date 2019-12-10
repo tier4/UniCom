@@ -76,4 +76,4 @@ if the topic and it's type is matched, the callback function was called.
 
 1. Open SampleScene.Unity and Run
 
-[![Image Alt Text](https://img.youtube.com/vi/fJ2IT3p2Boo&feature=youtu.be/0.jpg)](https://www.youtube.com/watch?v=fJ2IT3p2Boo&feature=youtu.be)
+[![Image Alt Text](http://img.youtube.com/vi/fJ2IT3p2Boo/maxresdefault.jpg)](https://www.youtube.com/watch?v=fJ2IT3p2Boo&feature=youtu.be)
