@@ -26,3 +26,6 @@ sysinfo.txt
 
 # Builds
 *.apk
+
+# Extrenal Libs
+Plugins
